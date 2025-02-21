@@ -33,7 +33,7 @@ fi
 # Assign the first argument as the IP
 IP=$1
 
-# Validate IP format (optional)
+# Validate IP format
 if ! [[ $IP =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
     echo -e "\n${redColour}[!] Error: Invalid IP format.${endColour}"
     help_panel
